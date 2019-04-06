@@ -4,7 +4,6 @@
       <img id="idea-logo" alt="Vue logo" src="../assets/Clim_Logo_2.svg" />
     </div>
     <section id="intro-section">
-    <!--<HelloWorld msg="Welcome to Your Vue.js App" /> -->
       <h2>CLIMATE <span style="color: #FA9917;">INSIGHT</span></h2>
       <img id="owl" src="../assets/owl.svg">
       <p>We provide a playful learning experience, which makes children understand a 
