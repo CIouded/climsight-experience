@@ -16,7 +16,7 @@
     </section> 
 
     <section id="tree-cut-game-section">
-       <iframe id="UnityObject" src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2Fx74PHp5BitgePJQIfb9V1JEKMju2%2Fcontent%2F5fb82cda-a278-f41b-d3b2-fe483e608d70&imagePath=screens/0.png" style="width:560px;height:420px;border:0"></iframe>
+       <iframe class="UnityObject" src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2Fx74PHp5BitgePJQIfb9V1JEKMju2%2Fcontent%2F5fb82cda-a278-f41b-d3b2-fe483e608d70&imagePath=screens/0.png" style="width:560px;height:420px;border:0"></iframe>
         <div>
             <h2>The Amazon Forest</h2>
             <p>You are a grumpy lumberjack that works with harvesting trees from ancient forests. 
@@ -36,6 +36,14 @@
       </div>
 
       <iframe id="UnityObject_2" src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2Fx74PHp5BitgePJQIfb9V1JEKMju2%2Fcontent%2F366f9683-e048-6b5b-618f-eca6579dcd5f&imagePath=screens/0.png" style="width:560px;height:400px;border:0"></iframe>
+    </section>
+    <section id="recycle-game-section">
+
+      <iframe class="UnityObject" src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2Fx74PHp5BitgePJQIfb9V1JEKMju2%2Fcontent%2F207f45c7-aa27-285e-cd3e-61d3e451b40d&imagePath=screens/0.png" style="width:560px;height:420px;border:0"></iframe>
+      <div>
+            <h2>Throw it in the Bin!</h2>
+            <p>It is time to recycle!</p>
+      </div>
     </section>
   </div>
 </template>
@@ -140,6 +148,12 @@ body{
   .smaller-logo{
     width: 7% !important;
   }
+
+#UnityObject{
+    display: block;
+    margin: 0 30px
+  }
+
 #intro-section{
   position: relative;
   left: 0;
@@ -389,6 +403,67 @@ body{
     .light{
       background-image: url("../assets/lightbulb-on.svg");
     }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    background: #3399FF;
+    left: 0;
+    bottom: -50px;
+    width: 100vw;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 15px 10px 10px rgba(110,110,110,0.2);
+    -moz-box-shadow: 0px 15px 10px 10px rgba(110,110,110,0.2);
+    box-shadow: 0px 15px 10px 10px rgba(110,110,110,0.2);
+    z-index: 3;
+  }
+}
+
+#recycle-game-section{
+  display: flex !important;
+  flex-direction: row ;
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 500px;
+  display: block;
+  background: #B1CDB6;
+  padding: 100px 0;
+
+  .UnityObject{
+    display: block;
+    margin: 0 30px
+  }
+
+  div {
+    display: block;
+    width: 40vw;
+    height: inherit;
+    padding: 10px;
+
+    h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    width: 500px;
+    box-sizing: border-box;
+    margin: 0 30px;
+  }
+
+  p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    width: 500px;
+    margin: 0 30px;
+  }
+    
   }
 
   &::after{
